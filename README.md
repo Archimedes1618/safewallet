@@ -6,7 +6,7 @@ You must have `node.js` (v8.9 LTS works)  and `npm` installed on your machine.
 
 Clone Safewallet Desktop App with FairExchange-GUI submodule
 ```shell
-1) git clone https://github.com/safe-exchange/safewallet 
+1) git clone https://github.com/safe-exchange/safewallet
 2) cd safewallet && cd gui/FairExchange-GUI/
 3) npm install && npm install webpack
 4) cd ../ && ./binary_artifacts.sh
@@ -19,6 +19,12 @@ Clone Safewallet Desktop App with FairExchange-GUI submodule
 
 You are ready to dev
 ```
+
+### CI/CD
+
+Every build a new version is compiled on CircleCI (see .circleci/config.yml).
+
+To download the artifacts for a build, see: https://circleci.com/docs/2.0/artifacts/#downloading-all-artifacts-for-a-build-on-circleci
 
 ### Important dev notes
 
