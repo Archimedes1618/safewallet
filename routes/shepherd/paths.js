@@ -68,7 +68,7 @@ module.exports = (shepherd) => {
         shepherd.chipscliBin = path.normalize(shepherd.chipscliBin),
         shepherd.chipsDir = `${process.env.APPDATA}/Chips`,
         shepherd.chipsDir = path.normalize(shepherd.chipsDir);
-        shepherd.zcashParamsDir = `${process.env.APPDATA}/ZcashParams`;
+        shepherd.zcashParamsDir = path.join(__dirname, '../../assets/keys');
         shepherd.zcashParamsDir = path.normalize(shepherd.zcashParamsDir);
         shepherd.coindRootDir = path.join(__dirname, '../../assets/bin/osx/dex/coind');
         shepherd.coindRootDir = path.normalize(shepherd.coindRootDir);
